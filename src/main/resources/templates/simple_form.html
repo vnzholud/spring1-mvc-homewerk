@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1> Simple form</h1>
+    <form method="get" th:action = "@{'/products/add'}">
+
+        <span>id</span>
+        <input name="id" type="number">
+        <span>name</span>
+        <input name="title" type="text">
+        <span>price</span>
+        <input name="price" type="number">
+        <button type="submit">submit</button>
+
+    </form>
+
+</body>
+</html>
